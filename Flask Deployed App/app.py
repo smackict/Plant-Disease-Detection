@@ -26,7 +26,7 @@ def prediction(image_path):
     return index
 
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder="/content/Plant-Disease-Detection/Flask Deployed App/templates")
 
 @app.route('/')
 def home_page():
